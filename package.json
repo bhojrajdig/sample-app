@@ -1,9 +1,11 @@
 {
   "name": "@binah/sample-app",
   "version": "4.12.1-8",
+  "homepage": "https://earnest-froyo-d5b761.netlify.app",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production webpack --progress"
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "postinstall": "tsc"
   },
   "dependencies": {
     "@binah/web-sdk": "./binah-web-sdk-v4.12.1-8.tgz",
